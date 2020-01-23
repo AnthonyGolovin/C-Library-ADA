@@ -8,6 +8,11 @@
 
 <h1>Welcome to Seattle's New Online library!</h1>
 <br>
+<form asp-controller="Home" asp-action="Index">
+    <p>
+        <i class="fa fa-search"></i> <input type="text"  name="Search" placeholder="Search">
+    </p>
+</form>
 
 @if (User.Identity.IsAuthenticated)
 {
